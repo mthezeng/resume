@@ -12,7 +12,7 @@
 \documentclass[10pt,a4paper]{article}
 
 % Set the page margins.
-\usepackage[a4paper,margin=0.75in]{geometry}
+\usepackage[a4paper,margin=0.45in]{geometry}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -38,7 +38,7 @@
 % \sbull is a spaced bullet
 % \href well..
 % \\ breaks the line into a new paragraph
-\noindent\href{mailto:michaelzeng7.at.icloud.com}{michaelzeng7\mbox{}@\mbox{}icloud.com}\sbull
+\noindent\href{mailto:michaelzeng7.at.gmail.com}{michaelzeng7\mbox{}@\mbox{}gmail.com}\sbull
 (614) 800-7067\sbull
 %\href{https://github.com/mzeng7}{github.com/mzeng7}\sbull
 \href{https://www.linkedin.com/in/michael-z-78682812a/}{linkedin.com/in/michael-z-78682812a/}
@@ -50,19 +50,32 @@ United States
 
 \spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
+\roottitle{Education}
+
+\headedsection
+  {\href{https://www.berkeley.edu/}{University of California, Berkeley}}
+  {\textsc{Berkeley, CA}} {%
+  \headedsubsection
+    {B.A. \textnormal{(Computer Science)} \sbull GPA: \textnormal{3.79/4}}
+    {Expected graduation: May 2021 \sbull August 2017 -- present}
+    {}
+}
+
+\spacedhrule{0.4em}{-0.4em}
+
 \roottitle{Experience}
 
 \headedsection
-  {\href{https://www.friendlyrobots.co/}{Friendly Robots Company}}
+  {\href{https://www.friendlyrobots.co/}{Friendly Robots Co.}}
   {\textsc{Berkeley, CA}} {%
   \headedsubsection
     {Software Engineering Intern}
     {June 2019 -- present}
-    {\bodytext{Seed-stage startup headquartered in Berkeley, CA, whose mission is to develop autonomously driven robotic vacuum cleaners targeted at enterprises.
+    {\bodytext{
     \begin{itemize} 
-		\item Implemented a path planning algorithm in Python designed to find the most optimal vacuuming path for a car-like robot given 2D map information generated from a laser (LiDAR) scanner.
-		\item Integrated computer vision through a stereo camera in Robot Operating System (ROS) to allow the robot to detect and avoid obstacles while driving autonomously.
-		\item Designed a basic website in HTML/Javascript allowing the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information.
+		\item Implemented path planning algorithm in Python designed to identify the most optimal vacuuming path for fully autonomous robotic vacuum cleaner given 2D map information generated from a laser scanner
+		\item Integrated computer vision through a stereo camera in Robot Operating System (ROS) to allow the robot to detect and avoid obstacles while driving autonomously
+		\item Designed and deployed a website hosted on AWS cloud infrastructure which allows the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information
 	\end{itemize}
     }
     }
@@ -70,27 +83,21 @@ United States
 
 \spacedhrule{0.4em}{-0.4em}
 
-\roottitle{Education}
+\roottitle{Projects}
 
 \headedsection
-  {\href{https://www.berkeley.edu/}{University of California, Berkeley}}
-  {\textsc{Berkeley, CA}} {%
-  \headedsubsection
-    {B.A. \textnormal{(Computer Science)} \sbull GPA: \textnormal{3.775/4}}
-    {Expected graduation: Spring 2021 \sbull August 2017 -- present}
-    {\bodytext{\textbf{Major courses:}
-    	\begin{itemize} 
-		\item CS 61a: Structure and Interpretation of Computer Programs
-		\item CS 61b: Data Structures
-		\item CS 61c: Great Ideas in Computer Architecture (Machine Structures)
-		\item CS 70: Discrete Mathematics and Probability Theory
-	\end{itemize}	
-	}}
-}
-
-\spacedhrule{0.4em}{-0.4em}
-
-\roottitle{Projects}
+  {HoldemSim}
+  {\headedsubsection
+    {Languages: Python 3 \sbull \textnormal{\href{https://github.com/mzeng7/holdem-sim}{https://github.com/mzeng7/holdem-sim}}}
+    {May 2019 -- present}
+    {\bodytext{A simulator for the poker game of Texas hold'em that allows the user to simulate games and analyze strategy
+    \begin{itemize} 
+		\item Designed objects to store and compare different poker hands efficiently
+		\item Implemented an algorithm that applies the rules of Texas hold'em to determine the winning hand given all cards and actions in play
+		%\item Implemented an algorithm that calculates a player's All-In Expected Value (EV), or the amount of money they can expect to earn in the long run if they bet all their chips on the current hand
+	\end{itemize}
+	}
+}}
 
 \headedsection
   {CS 61b: Data Structures}
@@ -98,21 +105,22 @@ United States
     {Languages: Java}
     {Fall 2018}
     {\bodytext{\begin{itemize}
-    	\item \textbf{Galaxies:} Implemented a puzzle game 
-	\item \textbf{Enigma:} Implemented an improved version of the Enigma machine, a German device used to encrypt messages during World War II.
-	\item \textbf{Amazons:} Implemented a board game and an AI player, using a game tree to find the best moves.
-	\item \textbf{Graphs:} Implemented a graphs utility package in Java, including a generalized graph traversal algorithm that can be extended to Depth-First Search, Breadth-First Search, Dijkstra's and A*.
+    	\item \textbf{Galaxies:} Implemented a puzzle game consisting of dots, with players surrounding each dot by laying down vertical or horizontal walls perfectly symmetrical around the dot
+	\item \textbf{Enigma:} Implemented an improved Enigma machine, a German device used to encrypt messages during World War II, avoiding the cryptographic weaknesses of the original machine
+	\item \textbf{Amazons:} Implemented a strategy game played on a chess board where users can play human vs human or human vs an AI made using a game tree to calculate the best moves
+	\item \textbf{Graphs:} Implemented a graphs utility package in Java, including a generalized graph traversal algorithm that can be extended to Depth-First Search, Breadth-First Search, Dijkstra's and A*
 	\end{itemize}}}
 }
 
 \headedsection
-  {Prêt Allez}
+  {CS 61c: Great Ideas in Computer Architecture (Machine Structures)}
   {\headedsubsection
-    {Languages: JavaScript}
-    {Summer 2018 -- present}
+    {Languages: C, GoLang}
+    {Spring 2019}
     {\bodytext{\begin{itemize}
-	\item Implemented a web application which allows the user to construct a fencing referee's call based on the rules of right-of-way.
-	\item In the future, users will be able to watch a fencing video, input what they would call if they were refereeing, and compare their input against what the referee in the video actually called.
+    	\item \textbf{Simplified C compiler:} Implemented a basic compiler in C for a simplified version of the C language, starting with lexing the code into tokens, which are then parsed into an abstract syntax tree (AST), which is then used to generate RISC-V assembly code
+	\item \textbf{Performance programming:} Utilized Intel intrinsic SIMD instructions and OpenMP to parallelize operations in C code, resulting in a 16x speed-up in an image recognition algorithm
+	\item \textbf{Go:} Implemented a simple file server in GoLang with a limited-size cache able to handle multiple requests simultaneously
 	\end{itemize}}}
 }
 
@@ -126,10 +134,10 @@ United States
     {Vice President}
     {August 2017 -- present}
     {\bodytext{\begin{itemize}
-	\item As vice president, I assist the president in communicating information to the team, liaising with Cal Sports Clubs in organizing club events, and training to become president in 2020-21.
-	\item The Cal Fencing Club manages a budget of more than \$20,000 per year.
-	\item I am an officially rated foil referee for the United States Fencing Association.
-	\end{itemize}}}
+    \item Led the officer team, communicating important information to the team, liaising with Cal Sports Clubs in organizing club events, and training to become club president in 2020-21
+    \item Certified referee for the United States Fencing Association
+    \end{itemize}
+    }}
 }
 
 \spacedhrule{0.5em}{-0.4em}
@@ -137,12 +145,12 @@ United States
 \roottitle{Skills and interests}
 
 \inlineheadsection
-  {Programming languages:}
-  {Python 3, Java, JavaScript, C, RISC-V Assembly}
+  {Technical skills:}
+  {Python, Java, C, HTML/CSS, JavaScript, Git}
   
 \inlineheadsection
   {Natural languages:}
-  {English \emph{(native)}, German \emph{(intermediate)}, Mandarin Chinese \emph{(basic)}.}
+  {English \emph{(native)}, German \emph{(proficient)}, Mandarin Chinese \emph{(conversational)}.}
 
 \inlineheadsection
   {Interests:}
