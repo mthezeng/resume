@@ -12,7 +12,7 @@
 \documentclass[10pt,a4paper]{article}
 
 % Set the page margins.
-\usepackage[a4paper,margin=0.45in]{geometry}
+\usepackage[a4paper,margin=0.35in]{geometry}
 
 % Setup the language.
 \usepackage[english]{babel}
@@ -39,12 +39,10 @@
 % \href well..
 % \\ breaks the line into a new paragraph
 \noindent\href{mailto:michaelzeng7.at.gmail.com}{michaelzeng7\mbox{}@\mbox{}gmail.com}\sbull
-(614) 800-7067\sbull
+(614) 800-7067 \sbull
 %\href{https://github.com/mzeng7}{github.com/mzeng7}\sbull
-\href{https://www.linkedin.com/in/michael-z-78682812a/}{linkedin.com/in/michael-z-78682812a/}
-\\
-2732 Haste St\sbull
-Apt 27\sbull
+%\href{https://www.linkedin.com/in/michael-z-78682812a/}{linkedin.com/in/michael-z-78682812a/}
+%\\
 Berkeley, CA\sbull
 United States
 
@@ -73,9 +71,10 @@ United States
     {June 2019 -- August 2019}
     {\bodytext{
     \begin{itemize} 
-		\item Developed path planner and navigation stack in Python designed to identify the most optimal vacuuming path for an autonomous robotic vacuum cleaner given 2D map information generated from a laser scanner
-		\item Integrated computer vision through a stereo camera in Robot Operating System (ROS) to allow the robot to detect and avoid obstacles while driving autonomously
-		\item Designed and deployed a website hosted on an AWS EC2 instance which allows the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information
+		\item Developed Python navigation backend designed to identify the most optimal vacuuming path for an autonomous robotic vacuum cleaner
+		\item Integrated Google Cartographer SLAM with a LiDAR laser scanner in Robot Operating System (ROS)
+		\item Integrated computer vision through a ZED stereo camera to allow the robot to detect and avoid obstacles while driving autonomously, using the ROS package zed-ros-wrapper
+		\item Designed and deployed a website hosted on an AWS Elastic Compute instance which allows the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information
 	\end{itemize}
     }
     }
@@ -88,40 +87,40 @@ United States
 \headedsection
   {HoldemSim}
   {\headedsubsection
-    {Languages: Python, HTML/CSS \sbull \textnormal{\href{https://github.com/mzeng7/holdem-sim}{https://github.com/mzeng7/holdem-sim}}}
+    {Languages: Python (Django), HTML/CSS \sbull \textnormal{\href{https://github.com/mzeng7/holdem-sim}{https://github.com/mzeng7/holdem-sim}}}
     {May 2019 -- present}
-    {\bodytext{A simulator for the poker game of Texas hold'em that allows the user to simulate games and analyze strategy
+    {\bodytext{A full-stack web application written using the Django web framework for the poker game of Texas hold'em that allows the user to simulate games and analyze strategy
     \begin{itemize} 
 		\item Designed objects to store and compare different poker hands efficiently
 		\item Developed an algorithm that applies the rules of Texas hold'em to determine the winning hand once the action in a round is complete, given all cards available
-		\item Implemented a web interface using the Django web framework, allowing users to create accounts, maintain profiles, and store their hand histories
+		\item Implemented a web interface that allows users to create accounts and maintain profiles
 		%\item Implemented an algorithm that calculates a player's All-In Expected Value (EV), or the amount of money they can expect to earn in the long run if they bet all their chips on the current hand
 	\end{itemize}
 	}
 }}
 
 \headedsection
-  {CS 61b: Data Structures}
+  {Simplified C compiler}
   {\headedsubsection
-    {Languages: Java}
-    {Fall 2018}
-    {\bodytext{\begin{itemize}
-    	\item \textbf{Galaxies:} Implemented a puzzle game consisting of dots, with players surrounding each dot by laying down vertical or horizontal walls perfectly symmetrical around the dot
-	\item \textbf{Enigma:} Implemented an improved Enigma machine, a German device used to encrypt messages during World War II, avoiding the cryptographic weaknesses of the original machine
-	\item \textbf{Amazons:} Implemented a strategy game played on a chess board where users can play human vs human or human vs an AI made using a game tree to calculate the best moves
-	\item \textbf{Graphs:} Implemented a graphs utility package in Java, including a generalized graph traversal algorithm that is subclassed by Depth-First Search, Breadth-First Search, Dijkstra's and A*
-	\end{itemize}}}
+    {Languages: C, RISC-V}
+    {January 2019 -- March 2019}
+    {\bodytext{A compiler for a simplified version of the C language which translates high-level C code into assembly code
+    \begin{itemize}
+	\item Implemented a lexer which takes the C code and converts them into tokens for various syntactic structures, discarding comments and excess whitespace
+	\item Developed a parser which arranges the tokens into an abstract syntax tree (AST), which defines the structure of the program in terms of the lexed tokens, supporting if/else statements, for loops, call expressions, function declarations, variable declarations, binary expressions, literals, return statements, and others
+	\item Developed a code generation program which converts the AST into RISC-V assembly code that can be run immediately on a RISC-V processor
+    \end{itemize}}}
 }
 
 \headedsection
-  {CS 61c: Great Ideas in Computer Architecture (Machine Structures)}
+  {Amazons}
   {\headedsubsection
-    {Languages: C, GoLang}
-    {Spring 2019}
-    {\bodytext{\begin{itemize}
-    	\item \textbf{Simplified C compiler:} Implemented a basic compiler in C for a simplified version of the C language, starting with lexing the code into tokens, which are then parsed into an abstract syntax tree (AST), which is then used to generate RISC-V assembly code
-	\item \textbf{Performance programming:} Utilized Intel intrinsic SIMD instructions and OpenMP to parallelize operations in C code, resulting in a 16x speed-up in an image recognition algorithm
-	\item \textbf{Go:} Implemented a simple file server in GoLang with a limited-size cache able to handle multiple requests simultaneously
+    {Languages: Java}
+    {October 2018 -- November 2018}
+    {\bodytext{A strategy game played on a chess board where each player has four queens that can move like queens in chess and can throw spears that block the path of other queens
+    \begin{itemize}
+	\item Designed and deployed an efficient AI player by implementing a minimax algorithm on a game tree, where the heuristic is the difference between the number of legal moves remaining for each player
+	\item Implemented the core game structures and objects, such as the board, players, moves, and pieces, applying the rules of the game programmatically
 	\end{itemize}}}
 }
 
@@ -135,7 +134,8 @@ United States
     {Vice President}
     {August 2017 -- present}
     {\bodytext{\begin{itemize}
-    \item Led the officer team, communicating important information to the team, liaising with Cal Sports Clubs in organizing club events, managed a budget of \$20,000, and training to become club president in 2020-21
+    \item Led the officer team, was responsible for team communications using the mass-message delivery tool MailChimp, and managed a budget of \$20,000 which we use for travel to competitions and equipment
+    \item Managed the website fencing.berkeley.edu, which facilitated the annual recruitment of at least 25 new fencers through advertising, scheduling, and contact information, designed with Bootstrap CSS/JavaScript
     \item Certified referee for the United States Fencing Association
     \end{itemize}
     }}
@@ -143,14 +143,14 @@ United States
 
 \spacedhrule{0.5em}{-0.4em}
 
-\roottitle{Skills and interests}
+\roottitle{Skills and Interests}
 
 \inlineheadsection
-  {Technical skills:}
-  {Python, Java, C, HTML/CSS, JavaScript, Git, Django web framework}
+  {Technical Skills:}
+  {Python, Java, C, HTML/CSS, JavaScript, GoLang, Git, Django web framework}
   
 \inlineheadsection
-  {Natural languages:}
+  {Natural Languages:}
   {English \emph{(native)}, German \emph{(proficient)}, Mandarin Chinese \emph{(conversational)}.}
 
 \inlineheadsection
