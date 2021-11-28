@@ -54,14 +54,29 @@ United States
   {\href{https://www.berkeley.edu/}{University of California, Berkeley}}
   {\textsc{Berkeley, CA}} {%
   \headedsubsection
-    {B.A. \textnormal{(Computer Science)} \sbull GPA: \textnormal{3.722/4.0}}
+    {B.A. \textnormal{(Computer Science)} \sbull GPA: \textnormal{3.74/4.0}}
     {Expected graduation: May 2021 \sbull August 2017 -- present}
-    {\bodytext{\textit{Relevant coursework}: Data Structures, Machine Structures, Algorithms, Artificial Intelligence \\ \textit{In progress:} Computer Security, Internet/Networking}}
+    {\bodytext{\textit{Relevant coursework}: Data Structures, Machine Structures, Algorithms, Artificial Intelligence, Computer Security, Computer Networking}}
 }
 
 \spacedhrule{0.4em}{-0.4em}
 
 \roottitle{Experience}
+
+\headedsection
+  {\href{https://www.jpmorganchase.com/}{JPMorgan Chase \& Co.}}
+  {\textsc{Columbus, OH}} {%
+  \headedsubsection
+    {Summer Software Engineer Intern}
+    {July 2020 -- August 2020}
+    {\bodytext{
+    	\begin{itemize}
+		\item Developed a website designed to improve interaction between one of the firm's non-profit clients and their prospective donors
+		\item Utilized the Django web framework (Python 3) to create a system that allows the non-profit's staff to publish newsletters to their donor base and allow users to comment on those newsletters, subject to staff moderation
+		\item Implemented a dynamic programming algorithm in Java designed to compute the edit distance between two strings in $O(nm)$ time
+	\end{itemize}
+    }}
+}
 
 \headedsection
   {\href{https://www.friendlyrobots.co/}{Friendly Robots Co.}}
@@ -71,10 +86,9 @@ United States
     {June 2019 -- August 2019}
     {\bodytext{
     \begin{itemize} 
-		\item Developed Python navigation backend designed to identify the most optimal vacuuming path for an autonomous robotic vacuum cleaner
 		\item Integrated Google Cartographer SLAM with a LiDAR laser scanner in Robot Operating System (ROS)
-		\item Integrated computer vision through a ZED stereo camera to allow the robot to detect and avoid obstacles while driving autonomously, using the ROS package zed-ros-wrapper
-		\item Designed and deployed a website hosted on an AWS Elastic Compute instance which allows the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information
+		\item Integrated computer vision through a ZED stereo camera to allow the robot to detect and avoid obstacles while driving autonomously, using ROS
+		\item Deployed a JavaScript website on an AWS EC2 instance which allows the user to teleoperate the robotic vacuum cleaner remotely through the Internet based on sensor and camera information
 	\end{itemize}
     }
     }
@@ -93,35 +107,21 @@ United States
     \begin{itemize} 
 		\item Designed objects to store and compare different poker hands efficiently
 		\item Developed an algorithm that applies the rules of Texas hold'em to determine the winning hand once the action in a round is complete, given all cards available
-		\item Implemented a web interface that allows users to create accounts and maintain profiles
 		%\item Implemented an algorithm that calculates a player's All-In Expected Value (EV), or the amount of money they can expect to earn in the long run if they bet all their chips on the current hand
 	\end{itemize}
 	}
 }}
 
 \headedsection
-  {Simplified C compiler}
+  {The Matrix}
   {\headedsubsection
-    {Languages: C, RISC-V}
-    {January 2019 -- March 2019}
-    {\bodytext{A compiler for a simplified version of the C language which translates high-level C code into assembly code
+    {Languages: C++, x86}
+    {February 2020}
+    {\bodytext{
     \begin{itemize}
-	\item Implemented a lexer which takes the C code and converts them into tokens for various syntactic structures, discarding comments and excess whitespace
-	\item Developed a parser which arranges the tokens into an abstract syntax tree (AST), which defines the structure of the program in terms of the lexed tokens, supporting if/else statements, for loops, call expressions, function declarations, variable declarations, binary expressions, literals, return statements, and others
-	\item Developed a code generation program which converts the AST into RISC-V assembly code that can be run immediately on a RISC-V processor
+	\item Identified and experimented with various memory security vulnerabilities inside of C++ programs in a virtual x86 machine, which allowed me to spawn a shell with higher permissions access than an ordinary user
+	\item Experimented with "stack-smashing" buffer overflow attacks, including overwriting the return instruction pointer by exploiting integer overflow, off-by-one errors, as well as time-to-check to time-of-use vulnerabilities
     \end{itemize}}}
-}
-
-\headedsection
-  {Amazons}
-  {\headedsubsection
-    {Languages: Java}
-    {October 2018 -- November 2018}
-    {\bodytext{A strategy game played on a chess board where each player has four queens that can move like queens in chess and can throw spears that block the path of other queens
-    \begin{itemize}
-	\item Designed and deployed an efficient AI player by implementing a minimax algorithm on a game tree, where the heuristic is the difference between the number of legal moves remaining for each player
-	\item Implemented the core game structures and objects, such as the board, players, moves, and pieces, applying the rules of the game programmatically
-	\end{itemize}}}
 }
 
 \spacedhrule{0.4em}{-0.4em}
@@ -131,12 +131,25 @@ United States
 \headedsection
   {\href{https://fencing.berkeley.edu/}{Cal Fencing Club}}
   {\headedsubsection
-    {Vice President}
-    {August 2017 -- present}
+    {President}
+    {June 2020 -- present}
     {\bodytext{\begin{itemize}
-    \item Led the officer team, was responsible for team communications using the mass-message delivery tool MailChimp, and managed a budget of \$20,000 which we use for travel to competitions and equipment
-    \item Managed the website fencing.berkeley.edu, which facilitated the annual recruitment of at least 25 new fencers through advertising, scheduling, and contact information, designed with Bootstrap CSS/JavaScript
-    \item Certified referee for the United States Fencing Association
+    \item Led UC Berkeley's fencing club through the COVID-19 crisis, planning "virtual" practices and recruitment events, and managed a budget of \$20,000 which we use for travel to competitions and equipment
+    \item Manage the website fencing.berkeley.edu, which facilitated the annual recruitment of at least 25 new fencers through advertising, scheduling, and contact information, designed with HTML/CSS/JavaScript
+    \item Previously secretary (June 2017 -- May 2018) and vice president (June 2019 -- May 2020)
+    \end{itemize}
+    }}
+}
+
+\headedsection
+  {\href{https://en.wikipedia.org/wiki/User:Mz7}{Wikipedia}}
+  {\headedsubsection
+    {Administrator}
+    {January 2017 -- present}
+    {\bodytext{\begin{itemize}
+    	\item Author of 12 Wikipedia articles, 4 of them have received the designation "good article" after a quality review
+	\item Help protect Wikipedia against vandals, blocking them from editing and deleting inappropriate content
+	\item Appointed to assist in issues affecting privacy, including the ability to suppress personal information and to compare the IP addresses and user agent strings of Wikipedia users to check for multiple accounts misuse
     \end{itemize}
     }}
 }
@@ -152,10 +165,6 @@ United States
 \inlineheadsection
   {Natural Languages:}
   {English \emph{(native)}, German \emph{(proficient)}, Mandarin Chinese \emph{(conversational)}.}
-
-\inlineheadsection
-  {Interests:}
-  {Fencing (attended nationals 4x), Wikipedia (administrator), Texas hold'em poker}
 
 
 \end{document}
